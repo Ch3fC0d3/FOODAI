@@ -570,7 +570,7 @@
     <section id="about" class="about">
         <div class="container">
             <h2 class="section-title">About the Project</h2>
-            <img src="images/CulinaryDesign.png" alt="Inverse Culinary Design Diagram" style="max-width:100%;height:auto;margin-bottom:2rem;display:block;margin-left:auto;margin-right:auto;" />
+            <img src="images/CulinaryDesign.png" alt="Inverse Culinary Design Diagram" id="aboutImage" style="width:220px;height:auto;float:right;margin-left:2rem;margin-bottom:1rem;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;" tabindex="0" aria-label="Expand image" />
             <p>This thesis proposes an inverse design approach to computational gastronomy, developing an AI system that generates novel recipes based on targeted functional and sensory outcomes (e.g., texture, dietary constraints). Using computational gastronomy and taste prediction algorithms, to reverse the traditional forward modeling of recipes, the system maps desired properties to compatible ingredient and preparation strategies, offering a new framework for data-driven, function-first food innovation.</p>
         </div>
     </section>
@@ -799,5 +799,27 @@
             });
         });
     </script>
+<!-- Modal for enlarged image -->
+<div id="imageModal" style="display:none;position:fixed;z-index:2000;left:0;top:0;width:100vw;height:100vh;background:rgba(0,0,0,0.7);justify-content:center;align-items:center;">
+  <span id="closeModal" style="position:absolute;top:2rem;right:3rem;font-size:2.5rem;color:white;cursor:pointer;z-index:2010;" aria-label="Close image">&times;</span>
+  <img src="images/CulinaryDesign.png" alt="Inverse Culinary Design Diagram Large" style="max-width:90vw;max-height:90vh;box-shadow:0 4px 32px rgba(0,0,0,0.25);border-radius:12px;" />
+</div>
+
+<script>
+// Modal logic for About image
+const aboutImg = document.getElementById('aboutImage');
+const modal = document.getElementById('imageModal');
+const closeModal = document.getElementById('closeModal');
+
+// Open modal on click or Enter key
+aboutImg.addEventListener('click', () => { modal.style.display = 'flex'; });
+aboutImg.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { modal.style.display = 'flex'; }});
+
+// Close modal on click of close button or background
+closeModal.addEventListener('click', () => { modal.style.display = 'none'; });
+modal.addEventListener('click', (e) => { if (e.target === modal) { modal.style.display = 'none'; }});
+// Close modal on Escape key
+window.addEventListener('keydown', (e) => { if (e.key === 'Escape') { modal.style.display = 'none'; }});
+</script>
 </body>
 </html>

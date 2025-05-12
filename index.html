@@ -444,6 +444,24 @@
             background-color: var(--dark);
             color: white;
             padding: 2rem 0;
+        }
+        .footer-flex {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        .footer-logo {
+            height: 48px;
+            width: auto;
+            margin-right: 2rem;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            background: white;
+            padding: 2px;
+        }
+        .footer-content {
+            flex: 1 1 250px;
             text-align: center;
         }
         
@@ -537,6 +555,18 @@
             .back-to-top {
                 bottom: 5rem;
             }
+            .footer-flex {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .footer-logo {
+                margin-bottom: 1rem;
+                margin-right: 0;
+            }
+            .footer-content {
+                width: 100%;
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -561,7 +591,7 @@
     <section class="hero">
         <div class="container">
             <h1>Outcome-Oriented Culinary Synthesis</h1>
-            <p>A functional-AI approach to computational gastronomy. Generating Novel Recipes from Desired Sensory Outcomes</p>
+            <p>A function-first approach to computational gastronomy. Generating Novel Recipes from Desired Sensory Outcomes</p>
             <a href="#research" class="btn">Learn More</a>
         </div>
     </section>
@@ -570,8 +600,8 @@
     <section id="about" class="about">
         <div class="container">
             <h2 class="section-title">About the Project</h2>
-            <img src="images/CulinaryDesign.png" alt="Inverse Culinary Design Diagram" id="aboutImage" style="width:220px;height:auto;float:right;margin-left:2rem;margin-bottom:1rem;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;" tabindex="0" aria-label="Expand image" />
-            <p>This thesis proposes an inverse design approach to computational gastronomy, developing an AI system that generates novel recipes based on targeted functional and sensory outcomes (e.g., texture, dietary constraints). Using computational gastronomy and taste prediction algorithms, to reverse the traditional forward modeling of recipes, the system maps desired properties to compatible ingredient and preparation strategies, offering a new framework for data-driven, function-first food innovation.</p>
+            <img src="images/VegNap.png" alt="Vegetarian Napolean Dish Diagram" id="aboutImage" style="width:220px;height:auto;float:right;margin-left:2rem;margin-bottom:1rem;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;" tabindex="0" aria-label="Expand image" />
+            <p>This thesis proposes an inverse design approach to computational gastronomy, developing an AI system that generates novel recipes based on targeted functional and sensory outcomes (e.g., texture, dietary constraints). Using computational gastronomy, pharmaceutical modeling and taste prediction algorithms, to reverse the traditional forward modeling of recipes, the system maps desired properties to compatible ingredient and preparation strategies, offering a new framework for data-driven, function-first food innovation.</p>
         </div>
     </section>
 
@@ -747,15 +777,18 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p> 2025 Inverse Food Design AI Project</p>
-            <p>SMU Department of Creative Computation</p>
-            <ul class="social-links">
+        <div class="container footer-flex">
+            <img src="images/smu.PNG" alt="SMU Logo" class="footer-logo" style="height:68px;width:auto;margin-right:3rem;vertical-align:middle;" />
+            <div class="footer-content">
+                <p> 2025 Inverse Food Design AI Project</p>
+                <p>SMU Department of Creative Computation</p>
+                <ul class="social-links">
                 
                 <li><a href="https://www.linkedin.com/in/gabrielpellegriniatx/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
                 <li><a href="https://github.com/Ch3fC0d3" target="_blank" rel="noopener noreferrer">GitHub</a></li>
                 <li><a href="mailto:gpellegrini@smu.edu" target="_blank" rel="noopener noreferrer">Email</a></li>
             </ul>
+            </div>
         </div>
     </footer>
     
@@ -802,7 +835,7 @@
 <!-- Modal for enlarged image -->
 <div id="imageModal" style="display:none;position:fixed;z-index:2000;left:0;top:0;width:100vw;height:100vh;background:rgba(0,0,0,0.7);justify-content:center;align-items:center;">
   <span id="closeModal" style="position:absolute;top:2rem;right:3rem;font-size:2.5rem;color:white;cursor:pointer;z-index:2010;" aria-label="Close image">&times;</span>
-  <img src="images/CulinaryDesign.png" alt="Inverse Culinary Design Diagram Large" style="max-width:90vw;max-height:90vh;box-shadow:0 4px 32px rgba(0,0,0,0.25);border-radius:12px;" />
+  <img src="images/VegNap.png" alt="Vegetarian Napolean Dish Diagram Large" style="max-width:90vw;max-height:90vh;box-shadow:0 4px 32px rgba(0,0,0,0.25);border-radius:12px;" />
 </div>
 
 <script>

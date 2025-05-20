@@ -854,5 +854,226 @@ modal.addEventListener('click', (e) => { if (e.target === modal) { modal.style.d
 // Close modal on Escape key
 window.addEventListener('keydown', (e) => { if (e.key === 'Escape') { modal.style.display = 'none'; }});
 </script>
+
+<!-- Technical Specification Report Section -->
+<section id="technical-spec" class="section">
+    <div class="container">
+        <h2 class="section-title"><span class="emojis">📋</span>Technical Specification</h2>
+        
+        <div class="section">
+            <h1>Technical Specification Report</h1>
+            <p class="subtitle">Inverse Culinary Design: A Functional-AI Approach to Generating Novel Recipes Based on Desired Sensory Outcomes</p>
+        </div>
+        
+        <div class="section">
+            <h2>1. Hardware and Software Requirements</h2>
+            
+            <h3>1.1 Hardware Requirements</h3>
+            
+            <h4>Client Device (User-Facing):</h4>
+            <ul>
+                <li><strong>Minimum:</strong> Intel Core i5, 8GB RAM, Integrated GPU, 1080p display</li>
+                <li><strong>Recommended:</strong> Intel Core i7 or Apple M1/M2 chip, 16GB RAM, dedicated GPU (e.g., NVIDIA GTX/RTX series)</li>
+            </ul>
+            
+            <h4>Server Infrastructure (Model Training & API Hosting):</h4>
+            <ul>
+                <li><strong>CPU:</strong> Minimum 4-core</li>
+                <li><strong>RAM:</strong> Minimum 16GB</li>
+                <li><strong>Storage:</strong> 100GB SSD</li>
+                <li><strong>GPU:</strong> Optional, but recommended for AI training (e.g., AWS EC2 G4/T4 instances)</li>
+            </ul>
+            
+            <h3>1.2 Software Requirements</h3>
+            
+            <table>
+                <tr>
+                    <th>Component</th>
+                    <th>Technology Stack</th>
+                </tr>
+                <tr>
+                    <td><strong>Frontend</strong></td>
+                    <td>React.js or Vue.js, HTML5, CSS3, JavaScript, TailwindCSS</td>
+                </tr>
+                <tr>
+                    <td><strong>Backend</strong></td>
+                    <td>Python 3.10+, Flask or FastAPI</td>
+                </tr>
+                <tr>
+                    <td><strong>Database</strong></td>
+                    <td>PostgreSQL or MongoDB</td>
+                </tr>
+                <tr>
+                    <td><strong>AI/ML Stack</strong></td>
+                    <td>TensorFlow, PyTorch, Scikit-learn, Pandas, NumPy</td>
+                </tr>
+                <tr>
+                    <td><strong>Data Sources</strong></td>
+                    <td>FlavorDB, FoodKG, Edamam API (optional), Spoonacular API</td>
+                </tr>
+                <tr>
+                    <td><strong>Visualization</strong></td>
+                    <td>D3.js, Chart.js, or Plotly for interactive data displays</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>2. System Architecture</h2>
+            
+            <h3>2.1 Overview</h3>
+            <p>The system follows a modular design comprising:</p>
+            <ul>
+                <li><strong>User Interface Layer</strong> – Receives user-defined sensory and functional targets.</li>
+                <li><strong>Application Programming Interface (API)</strong> – Mediates data exchange between frontend and backend.</li>
+                <li><strong>AI Engine</strong> – Executes inverse mapping from sensory goals to ingredients and preparation steps.</li>
+                <li><strong>Databases</strong> – Store ingredients, recipes, nutrition facts, and sensory mappings.</li>
+                <li><strong>External Integrations</strong> – Interfaces with third-party APIs for recipe/nutritional data.</li>
+            </ul>
+            
+            <h3>2.2 Data Flow Summary</h3>
+            <ol>
+                <li><strong>User Input:</strong> Functional goals (e.g., texture, flavor, dietary needs)</li>
+                <li><strong>Request Handling:</strong> API routes inputs to processing engine</li>
+                <li><strong>Computation:</strong> AI model selects ingredients + preparation logic</li>
+                <li><strong>Data Retrieval:</strong> Queries internal and external databases</li>
+                <li><strong>Output:</strong> Returns recipe with rationale and nutritional breakdown</li>
+            </ol>
+            
+            <h3>2.3 Third-Party Integrations</h3>
+            <ul>
+                <li><strong>FlavorDB</strong> – Sensory compound mapping</li>
+                <li><strong>Edamam API</strong> – Nutritional and dietary validation</li>
+                <li><strong>Firebase/Auth0</strong> – User authentication and secure login</li>
+                <li><strong>Figma or Adobe XD</strong> – UI/UX prototyping and design</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>3. Technical Standards</h2>
+            
+            <h3>3.1 Security and Compliance</h3>
+            <ul>
+                <li><strong>Encryption:</strong> HTTPS with TLS 1.2+</li>
+                <li><strong>Authentication:</strong> OAuth2 (via Firebase/Auth0)</li>
+                <li><strong>Input Sanitation:</strong> Backend validation and rate limiting</li>
+                <li><strong>Regulatory Compliance:</strong> GDPR/CCPA alignment for data privacy</li>
+            </ul>
+            
+            <h3>3.2 Interoperability and Accessibility</h3>
+            <ul>
+                <li><strong>API Standards:</strong> RESTful with OpenAPI 3.0 specification</li>
+                <li><strong>Data Format:</strong> JSON</li>
+                <li><strong>Accessibility:</strong> WCAG 2.1 AA compliance</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>4. Learning, Training, and Licensing</h2>
+            
+            <h3>4.1 Training Requirements</h3>
+            <table>
+                <tr>
+                    <th>Area</th>
+                    <th>Tools/Concepts</th>
+                </tr>
+                <tr>
+                    <td><strong>Machine Learning</strong></td>
+                    <td>Model training, clustering, sensory mapping</td>
+                </tr>
+                <tr>
+                    <td><strong>Frontend</strong></td>
+                    <td>React/Vue, component design, interactivity</td>
+                </tr>
+                <tr>
+                    <td><strong>Backend</strong></td>
+                    <td>Python API design, REST principles</td>
+                </tr>
+                <tr>
+                    <td><strong>Data Viz</strong></td>
+                    <td>D3.js, Chart.js</td>
+                </tr>
+                <tr>
+                    <td><strong>Culinary Science</strong></td>
+                    <td>Flavor pairings, texture principles, food chemistry</td>
+                </tr>
+            </table>
+            
+            <h3>4.2 Licensing Requirements</h3>
+            <table>
+                <tr>
+                    <th>Software</th>
+                    <th>License</th>
+                </tr>
+                <tr>
+                    <td>Python, TensorFlow, PyTorch</td>
+                    <td>Open Source (Apache 2.0, MIT, BSD)</td>
+                </tr>
+                <tr>
+                    <td>React.js / Vue.js</td>
+                    <td>MIT</td>
+                </tr>
+                <tr>
+                    <td>Edamam API</td>
+                    <td>Commercial (paid license for large use)</td>
+                </tr>
+                <tr>
+                    <td>Adobe XD / Figma</td>
+                    <td>Commercial (optional, team license may be needed)</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>5. Development Timeline and Milestones</h2>
+            
+            <h3>5.1 Timeline Overview</h3>
+            <table>
+                <tr>
+                    <th>Phase</th>
+                    <th>Duration</th>
+                    <th>Deliverables</th>
+                </tr>
+                <tr>
+                    <td>Research & Planning</td>
+                    <td>Weeks 1–2</td>
+                    <td>Tech stack defined, literature review</td>
+                </tr>
+                <tr>
+                    <td>Data Modeling & AI Training</td>
+                    <td>Weeks 3–5</td>
+                    <td>Ingredient-sensory model prototype</td>
+                </tr>
+                <tr>
+                    <td>UI/UX Prototyping</td>
+                    <td>Weeks 6–7</td>
+                    <td>Interactive frontend demo</td>
+                </tr>
+                <tr>
+                    <td>System Integration</td>
+                    <td>Weeks 8–9</td>
+                    <td>Working backend, connected API</td>
+                </tr>
+                <tr>
+                    <td>User Testing & Evaluation</td>
+                    <td>Week 10</td>
+                    <td>Feedback collection, model refinement</td>
+                </tr>
+                <tr>
+                    <td>Final Deployment</td>
+                    <td>Weeks 11–12</td>
+                    <td>Full system demo and documentation</td>
+                </tr>
+            </table>
+            <p><em>A visual Gantt chart is available upon request.</em></p>
+        </div>
+        
+        <div class="section">
+            <h2>6. Repository and File Access</h2>
+            <p><strong>GitHub Repository:</strong> 👉 <a href="https://github.com/Ch3fC0d3/FOODAI">https://github.com/Ch3fC0d3/FOODAI</a></p>
+        </div>
+    </div>
+</section>
+
 </body>
 </html>
